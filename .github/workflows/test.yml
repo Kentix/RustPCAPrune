@@ -13,10 +13,10 @@ jobs:
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Generate fixtures
-        run: |
-          python3 -m pip install --quiet scapy
-          python3 scripts/gen_fixtures.py
+      # Use committed fixtures from fixtures/ — they are the canonical inputs
+      # paired with the committed fixtures/expected_hashes.json. Regenerating
+      # them in CI would couple test results to the runner's scapy version
+      # and cause spurious hash-mismatch failures.
 
       - name: cargo test
         run: cargo test --verbose
