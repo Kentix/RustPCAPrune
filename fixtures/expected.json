@@ -1,0 +1,107 @@
+{
+  "synth-ipv4-options.pcap": {
+    "in_pkts": 20,
+    "truncated": 20,
+    "kept": 0,
+    "in_bytes": 2484,
+    "out_bytes": 2064
+  },
+  "synth-ipv6-hbh-tls.pcap": {
+    "in_pkts": 4,
+    "truncated": 4,
+    "kept": 0,
+    "in_bytes": 596,
+    "out_bytes": 512
+  },
+  "synth-ipv6-tls.pcap": {
+    "in_pkts": 4,
+    "truncated": 4,
+    "kept": 0,
+    "in_bytes": 564,
+    "out_bytes": 480
+  },
+  "synth-mixed.pcap": {
+    "in_pkts": 5,
+    "truncated": 2,
+    "kept": 3,
+    "in_bytes": 526,
+    "out_bytes": 499
+  },
+  "synth-non-tls-port-tls-shape.pcap": {
+    "in_pkts": 3,
+    "truncated": 3,
+    "kept": 0,
+    "in_bytes": 369,
+    "out_bytes": 306
+  },
+  "synth-qinq-tls.pcap": {
+    "in_pkts": 4,
+    "truncated": 4,
+    "kept": 0,
+    "in_bytes": 516,
+    "out_bytes": 432
+  },
+  "synth-ssh-banner-kept.pcap": {
+    "in_pkts": 2,
+    "truncated": 0,
+    "kept": 2,
+    "in_bytes": 258,
+    "out_bytes": 258
+  },
+  "synth-ssh-encrypted.pcap": {
+    "in_pkts": 2,
+    "truncated": 2,
+    "kept": 0,
+    "in_bytes": 244,
+    "out_bytes": 212
+  },
+  "synth-tcp-options-tls.pcap": {
+    "in_pkts": 4,
+    "truncated": 4,
+    "kept": 0,
+    "in_bytes": 532,
+    "out_bytes": 448
+  },
+  "synth-tls-443.pcap": {
+    "in_pkts": 5,
+    "truncated": 5,
+    "kept": 0,
+    "in_bytes": 599,
+    "out_bytes": 494
+  },
+  "synth-tls-handshake-kept.pcap": {
+    "in_pkts": 3,
+    "truncated": 0,
+    "kept": 3,
+    "in_bytes": 309,
+    "out_bytes": 309
+  },
+  "synth-udp-dns-kept.pcap": {
+    "in_pkts": 2,
+    "truncated": 0,
+    "kept": 2,
+    "in_bytes": 220,
+    "out_bytes": 220
+  },
+  "synth-udp-ipsec.pcap": {
+    "in_pkts": 2,
+    "truncated": 2,
+    "kept": 0,
+    "in_bytes": 220,
+    "out_bytes": 188
+  },
+  "synth-udp-quic.pcap": {
+    "in_pkts": 3,
+    "truncated": 3,
+    "kept": 0,
+    "in_bytes": 318,
+    "out_bytes": 270
+  },
+  "synth-vlan-tls.pcap": {
+    "in_pkts": 4,
+    "truncated": 4,
+    "kept": 0,
+    "in_bytes": 500,
+    "out_bytes": 416
+  }
+}

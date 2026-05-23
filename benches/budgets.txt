@@ -1,0 +1,14 @@
+# Performance budgets (max wall ms). budget_check allows HEADROOM=1.10×.
+# Synthetic CI scenarios (small pcaps; catches gross regressions):
+synthetic_single_10k_pkts       800
+synthetic_dir_3files_1worker    600
+synthetic_dir_3files_2workers   600
+synthetic_dir_3files_4workers   900
+
+# Production sensor reference (manual / scripts/bench.sh; not run in default CI):
+# single_cold_200mb        1500
+# single_cold_300mb        1100
+# single_cold_800mb        2500
+# dir_cold_1worker_1_24gb  3700
+# dir_cold_2worker_1_24gb  3700
+# dir_cold_4worker_1_24gb  3500
