@@ -4,6 +4,12 @@ on:
   push:
   pull_request:
 
+env:
+  # Opt into Node.js 24 for JavaScript actions (e.g. actions/checkout@v4),
+  # silencing the deprecation warning. GitHub will flip this default on
+  # June 2 2026; setting it explicitly avoids the warning now.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   fast:
     runs-on: ubuntu-latest
@@ -23,21 +29,3 @@ jobs:
 
       - name: Performance budgets
         run: cargo run --release --bin budget_check
-
-  golden:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-
-      - name: Install scapy
-        run: python3 -m pip install --quiet scapy
-
-      - name: Generate fixtures
-        run: python3 scripts/gen_fixtures.py
-
-      - name: Golden parity (ignored; needs ../PCAP_External_Cleaner/pcap_slim_lib.py)
-        run: cargo test --test golden --test golden_fixtures -- --ignored --nocapture
-        continue-on-error: true
