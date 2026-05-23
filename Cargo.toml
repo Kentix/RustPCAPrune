@@ -8,6 +8,9 @@ authors = ["Kentix <31446072+Kentix@users.noreply.github.com>"]
 readme = "README.md"
 keywords = ["pcap", "tls", "quic", "forensics", "packet-capture"]
 categories = ["command-line-utilities", "network-programming"]
+repository = "https://github.com/Kentix/RustPCAPrune"
+homepage = "https://github.com/Kentix/RustPCAPrune"
+documentation = "https://github.com/Kentix/RustPCAPrune#readme"
 
 [[bin]]
 name = "pcap-slim"
