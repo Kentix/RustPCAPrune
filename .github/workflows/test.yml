@@ -4,17 +4,11 @@ on:
   push:
   pull_request:
 
-env:
-  # Opt into Node.js 24 for JavaScript actions (e.g. actions/checkout@v4),
-  # silencing the deprecation warning. GitHub will flip this default on
-  # June 2 2026; setting it explicitly avoids the warning now.
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   fast:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
